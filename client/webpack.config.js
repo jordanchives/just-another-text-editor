@@ -24,10 +24,11 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         short_name: 'Text Editor',
-        description: 'An application that allows you to write and save text files.',
+        description: 'Take notes and save them in the browser. Includes JavaScript syntax highlighting.',
         background_color: '#01579b',
         theme_color: '#ffffff',
-        start_url: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
