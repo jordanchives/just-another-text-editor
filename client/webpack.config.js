@@ -14,6 +14,8 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+
+    // Add the HtmlWebpackPlugin, WebpackPwaManifest, and InjectManifest plugins
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
@@ -44,13 +46,16 @@ module.exports = () => {
       }),
     ],
 
+    // Add the module.rules array to the module object
     module: {
       rules: [
         {
+          // Add the css-loader and style-loader to the module.rules array
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
         {
+          // Add the babel-loader to the module.rules array
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {

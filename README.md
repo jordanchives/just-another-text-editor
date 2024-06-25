@@ -1,44 +1,74 @@
-# Text Editor Starter Code
+# Just Another Text Editor
 
-## User Story
-AS A developer  
-I WANT to create notes or code snippets with or without an internet connection  
-SO THAT I can reliably retrieve them for later use  
+A simple text editor app that can be installed from the browser and used offline.
 
-## Acceptance Criteria
-GIVEN a text editor web application  
-WHEN I open my application in my editor  
-THEN I should see a client server folder structure  
+## Table of Contents
 
-WHEN I run `npm run start` from the root directory  
-THEN I find that my application should start up the backend and serve the client  
+- [Description](#description)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Preview](#preview)
+- [License](#license)
 
-WHEN I run the text editor application from my terminal  
-THEN I find that my JavaScript files have been bundled using webpack  
+## Description
 
-WHEN I run my webpack plugins  
-THEN I find that I have a generated HTML file, service worker, and a manifest file  
+Just Another Text Editor is a simple text editor application that can be installed from the browser and used offline. It provides basic text editing features that are stored locally in the browser's IndexedDB.
 
-WHEN I use next-gen JavaScript in my application  
-THEN I find that the text editor still functions in the browser without errors  
+## Features
 
-WHEN I open the text editor  
-THEN I find that IndexedDB has immediately created a database storage  
+- Edit a text document
+- The document is stored locally in the browser's IndexedDB
+- Install the app from the browser
+- Use the app offline
 
-WHEN I enter content and subsequently click off of the DOM window  
-THEN I find that the content in the text editor has been saved with IndexedDB  
+## Technologies
 
-WHEN I reopen the text editor after closing it  
-THEN I find that the content in the text editor has been retrieved from our IndexedDB  
+- Node.js
+- Express.js
+- IndexedDB
+- Service Worker
+- Web App Manifest
 
-WHEN I click on the Install button  
-THEN I download my web application as an icon on my desktop  
+## Installation
 
-WHEN I load my web application  
-THEN I should have a registered service worker using workbox  
+1. Clone the repository:
 
-WHEN I register a service worker  
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets  
+   ```bash
+   git clone https://github.com/jordanchives/social-network-api.git
+   ```
 
-WHEN I deploy to Render  
-THEN I should have proper build scripts for a webpack application  
+2. Navigate to the project directory:
+
+   ```bash
+   cd social-network-api
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+    npm install
+   ```
+
+## Usage
+
+1. Start the application:
+
+   ```bash
+   npm start
+   ```
+
+2. Open the browser and navigate to `http://localhost:3000/`
+
+3. Edit the text document
+
+4. Install the app from the browser
+
+## Preview
+
+A deployed version of the application can be found [here](https://just-another-text-editor-fkmp.onrender.com/).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
