@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Text Editor',
+        title: 'Just Another Text Editor',
       }),
 
       new WebpackPwaManifest({
